@@ -1,4 +1,7 @@
-const Home = () => {
-    return <></>;
+import React from "react";
+
+const index = () => {
+    return <div>index</div>;
 };
-export default Home;
+
+export default index;

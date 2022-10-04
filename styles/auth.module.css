@@ -1,0 +1,8 @@
+.bg {
+    width: 100vw;
+    height: 100vh;
+}
+.title {
+    font-size: 40px;
+    font-family: var(--cinzel);
+}

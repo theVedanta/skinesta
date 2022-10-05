@@ -1,0 +1,78 @@
+.searchBar {
+	border-radius: 10pc;
+	margin: 1.2rem 13px;
+	display: flex;
+	align-items: center;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.searchInput {
+	border: none;
+	outline: none;
+	flex: 1;
+	padding: 14px 10px;
+	border-radius: 0 10pc 10pc 0;
+	font-size: 15px;
+	font-weight: 500;
+	color: #333;
+}
+.searchInput::placeholder {
+	font-weight: 400;
+}
+.searchIcon {
+	width: 20px;
+	height: 20px;
+	margin-left: 10px;
+}
+
+.banner_card {
+	position: relative;
+	margin: 1.2rem;
+	height: 190px;
+}
+
+.section {
+	padding: 10px 1rem;
+}
+.sectionTitle {
+	font-weight: 500;
+	font-size: 22px;
+	font-family: var(--raleway);
+}
+.contentContainer {
+	padding: 1.5rem 0;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 10px;
+}
+.productCard {
+	background: #fff;
+	box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 13px;
+	padding: 10px;
+}
+.productImgBox {
+	position: relative;
+	height: 150px;
+}
+
+.productName {
+	font-weight: 500;
+	font-size: 17px;
+	color: #0a0c08;
+	margin: 7px 0 5px 0;
+}
+.brand {
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 13px;
+	font-weight: 400;
+}
+.productBtn {
+	width: 100%;
+	background: #5ec396;
+	color: #fff;
+	border: none;
+	outline: none;
+	padding: 12px;
+	margin: 16px 0 7px 0;
+	border-radius: 8px;
+}

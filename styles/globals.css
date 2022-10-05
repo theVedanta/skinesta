@@ -1,27 +1,48 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Montserrat:ital,wght@0,300;0,400;0,500;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;1,300&display=swap");
 
 :root {
-    --montserrat: "Montserrat", sans-serif;
-    --cinzel: "Cinzel Decorative", cursive;
+	--montserrat: "Montserrat", sans-serif;
+	--cinzel: "Cinzel Decorative", cursive;
+	--raleway: "Raleway", sans-serif;
 }
 
 * {
-    outline: none;
-    box-sizing: border-box;
-    color: #0a0c08;
-    padding: 0;
-    margin: 0;
-    font-family: var(--montserrat);
+	outline: none;
+	box-sizing: border-box;
+	color: #0a0c08;
+	padding: 0;
+	margin: 0;
+	font-family: var(--montserrat);
 }
-.main {
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
+
+.embla {
+	overflow: hidden;
+	position: relative;
 }
-a {
-    text-decoration: none;
+.embla__container {
+	display: flex;
 }
-.cont {
-    padding: 0 6vw;
+.embla__slide {
+	flex: 0 0 100%;
+	margin: 0 1rem;
+}
+
+.embla__navigation {
+	position: absolute;
+	bottom: 1rem;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.embla__navigation li {
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	list-style: none;
+	background-color: #fff;
+	margin: 0 8px;
 }

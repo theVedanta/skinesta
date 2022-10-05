@@ -1,0 +1,64 @@
+.profileBox {
+	display: flex;
+	align-items: center;
+	padding: 1.2rem 1rem;
+}
+
+.profileImg {
+	position: relative;
+}
+
+.profileContentBox {
+	padding: 0 12px;
+}
+.profileContentBox .profileName {
+	font-weight: 500;
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+.profileContentBox .profileEmail {
+	font-weight: 500;
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.list {
+	list-style: none;
+}
+.list li {
+	border-top: 1px solid #ddd;
+	padding: 1.2rem 1.4rem;
+	display: flex;
+	align-items: center;
+}
+.list li a {
+	font-weight: 500;
+	font-size: 16px;
+	margin-left: 10px;
+}
+.list li .icon {
+	width: 21px;
+	height: 21px;
+}
+
+.logoutBtn {
+	width: 90%;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	bottom: 6rem;
+	left: 50%;
+	transform: translateX(-50%);
+	border: none;
+	outline: none;
+	background-color: #f2f3f2;
+	padding: 1rem;
+	border-radius: 10px;
+}
+.logoutBtn p {
+	flex: 1;
+	text-align: center;
+	color: #5ec396;
+	font-weight: 500;
+	font-size: 17px;
+}

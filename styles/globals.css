@@ -15,6 +15,13 @@
 	padding: 0;
 	margin: 0;
 	font-family: var(--montserrat);
+	text-decoration: none;
+}
+
+.container {
+	max-height: 95vh;
+	overflow: auto;
+	padding-bottom: 10px;
 }
 
 .embla {
@@ -39,12 +46,18 @@
 	justify-content: center;
 }
 .embla__navigation li {
-	width: 13px;
-	height: 13px;
+	width: 11px;
+	height: 11px;
 	border-radius: 50%;
 	list-style: none;
 	background-color: #fff;
 	margin: 0 8px;
+}
+.embla__navigation.product li {
+	background-color: rgba(255, 255, 255, 0.986);
+}
+.embla__navigation.product li.active {
+	background-color: #5ec396;
 }
 
 .bottomNavigation {
@@ -84,8 +97,8 @@
 	filter: invert(1);
 }
 
-.container {
-	max-height: 95vh;
-	overflow: auto;
-	padding-bottom: 10px;
+.backBtn {
+	outline: none;
+	border: none;
+	background: transparent;
 }

@@ -13,7 +13,6 @@ const auth = () => {
 					layout="fill"
 					style={{ zIndex: "-1" }}
 				/>
-				{/* <h1 className={styles.title}>Skinesta</h1> */}
 				<div className={styles.logo}>
 					<Image src={require("../public/logo@2x.png")} />
 				</div>

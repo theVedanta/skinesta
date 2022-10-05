@@ -3,6 +3,7 @@ import styles from "../styles/auth.module.css";
 import AuthCard from "components/AuthCard";
 import useEmblaCarousel from "embla-carousel-react";
 import Google from "components/Google";
+import CarouselNavigator from "components/CarouselNavigator";
 
 const Auth = ({ setAuthed, setUser, authed }) => {
     const [emblaRef, embla] = useEmblaCarousel({ loop: false });
@@ -52,6 +53,7 @@ const Auth = ({ setAuthed, setUser, authed }) => {
                                 <li onClick={() => embla.scrollTo(1)}></li>
                                 <li onClick={() => embla.scrollTo(2)}></li>
                             </ul>
+                            <CarouselNavigator embla={embla} />
                             <Google setAuthed={setAuthed} setUser={setUser} />
                         </div>
                     </div>

@@ -11,10 +11,10 @@ const ScheduleItem = ({ name, time }) => {
 	);
 };
 
-const ScheduleContainer = ({ scheduleData }) => {
+const ScheduleContainer = ({ scheduleData, containerStyle }) => {
 	return (
 		<>
-			<ul className={styles.scheduleContainer}>
+			<ul className={styles.scheduleContainer} style={containerStyle}>
 				{scheduleData.map((scheduleData, i) => {
 					return (
 						<li key={i}>

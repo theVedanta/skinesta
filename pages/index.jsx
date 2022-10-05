@@ -31,7 +31,7 @@ const Home = () => {
                     products
                 </p>
                 <div className={style.btns}>
-                    <Link href="/">
+                    <Link href="/auth">
                         <a
                             className={`${style.btn}`}
                             style={{ marginRight: "14px" }}
@@ -39,7 +39,7 @@ const Home = () => {
                             Explore
                         </a>
                     </Link>
-                    <Link href="/">
+                    <Link href="/auth">
                         <a className={`${style.btn} ${style.btnSecondary}`}>
                             Store
                         </a>

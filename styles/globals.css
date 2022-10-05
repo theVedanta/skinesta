@@ -102,15 +102,15 @@ a {
 	justify-content: center;
 }
 .bottomNavigation ul li.bottomNavigationItem .icon {
-	width: 23px;
-	height: 23px;
+	width: 21px;
+	height: 21px;
 }
 .bottomNavigation ul li.bottomNavigationItem.active {
 	background: #5ec396;
 }
 .bottomNavigation ul li.bottomNavigationItem.active .icon {
-	width: 23px;
-	height: 23px;
+	width: 21px;
+	height: 21px;
 	filter: invert(1);
 }
 

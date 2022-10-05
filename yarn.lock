@@ -448,6 +448,23 @@ doctrine@^3.0.0:
   dependencies:
     esutils "^2.0.2"
 
+embla-carousel-autoplay@^7.0.3:
+  version "7.0.3"
+  resolved "https://registry.yarnpkg.com/embla-carousel-autoplay/-/embla-carousel-autoplay-7.0.3.tgz#27c948875bd4866c6fa67526d1edd3232b513a13"
+  integrity sha512-cFysSJCzQ0+OvPkw0xb4xzVQlcr1f1Rbp6DhU3cGaIbk9XTPEvalvdUEyyrng4wiam/K7Zq5gjj6D9HU2fN1lg==
+
+embla-carousel-react@^7.0.3:
+  version "7.0.3"
+  resolved "https://registry.yarnpkg.com/embla-carousel-react/-/embla-carousel-react-7.0.3.tgz#343c972a1ac5869acba3d6e9c7eeb3bd27f7e335"
+  integrity sha512-nvgAAmoFuXyCPuH2rSTnSdaTSMwFX/ilXDlfMCCDfdaj4X3u25+x8lMC1bINuk+4G2Hm6SOlrZ1eGkYdBg5HAg==
+  dependencies:
+    embla-carousel "7.0.3"
+
+embla-carousel@7.0.3:
+  version "7.0.3"
+  resolved "https://registry.yarnpkg.com/embla-carousel/-/embla-carousel-7.0.3.tgz#7173a0f27b697a42266d34764c657eeba85bd7b5"
+  integrity sha512-Zo8E/qNb8J7n/jcfQxPrfdARlTgsMvmcXshn3J/2oxWVLwL/3N4cAhuqLQiud/oCjZzl+A8maCJDe2PDVlc/cA==
+
 emoji-regex@^9.2.2:
   version "9.2.2"
   resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-9.2.2.tgz#840c8803b0d8047f4ff0cf963176b32d4ef3ed72"
@@ -1376,7 +1393,7 @@ prelude-ls@^1.2.1:
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
   integrity sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
 
-prop-types@^15.8.1:
+prop-types@^15.7.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -1402,6 +1419,13 @@ react-dom@18.2.0:
   dependencies:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
+
+react-feather@^2.0.10:
+  version "2.0.10"
+  resolved "https://registry.yarnpkg.com/react-feather/-/react-feather-2.0.10.tgz#0e9abf05a66754f7b7bb71757ac4da7fb6be3b68"
+  integrity sha512-BLhukwJ+Z92Nmdcs+EMw6dy1Z/VLiJTzEQACDUEnWMClhYnFykJCGWQx+NmwP/qQHGX/5CzQ+TGi8ofg2+HzVQ==
+  dependencies:
+    prop-types "^15.7.2"
 
 react-is@^16.13.1:
   version "16.13.1"

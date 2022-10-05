@@ -1,40 +1,78 @@
-.search{
-    border: 2px solid rgba(0,0,0,0.27);
-    border-radius: 1000px;
-    padding: 2.8%;
-    margin-top: 5.6%;
-    margin-left: 5.4%;
-    margin-right: 5.4%;
-    box-shadow: 0px 0px 3px rgba(0,0,0,0.27);
+.searchBar {
+	border-radius: 10pc;
+	margin: 1.2rem 13px;
+	display: flex;
+	align-items: center;
+	border: 1px solid rgba(0, 0, 0, 0.2);
 }
-@font-face {
-    font-family: "Raleway";
-    src: local('Raleway'), url(/Raleway-VariableFont_wght.ttf) format('truetype');
+.searchInput {
+	border: none;
+	outline: none;
+	flex: 1;
+	padding: 14px 10px;
+	border-radius: 0 10pc 10pc 0;
+	font-size: 15px;
+	font-weight: 500;
+	color: #333;
 }
-.text2{
-    font-size: 100%;
-    border: 0;
-    padding-left: 15px;
-    color: "rgba(0,0,0,0.27)";
+.searchInput::placeholder {
+	font-weight: 400;
 }
-.text1{
-    color: #0a0c08;
-    font-family: "Raleway";
-    font-size: 210%;
-    margin-left: 20px;
+.searchIcon {
+	width: 20px;
+	height: 20px;
+	margin-left: 10px;
 }
-.navbar{
-    box-shadow: 0px 0px 3px rgba(0,0,0,0.27);
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+
+.banner_card {
+	position: relative;
+	margin: 1.2rem;
+	height: 190px;
 }
-.carousel1{
-    margin-top: 5%;
-    margin-bottom: 5%;
-    margin-left: 5.4%;
+
+.section {
+	padding: 10px 1rem;
 }
-.carousel2{
-    margin-left: 3%;
-    margin-right: 3%;
-    margin-top: 3%;
+.sectionTitle {
+	font-weight: 500;
+	font-size: 22px;
+	font-family: var(--raleway);
+}
+.contentContainer {
+	padding: 1.5rem 0;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 10px;
+}
+.productCard {
+	background: #fff;
+	box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 13px;
+	padding: 10px;
+}
+.productImgBox {
+	position: relative;
+	height: 150px;
+}
+
+.productName {
+	font-weight: 500;
+	font-size: 17px;
+	color: #0a0c08;
+	margin: 7px 0 5px 0;
+}
+.brand {
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 13px;
+	font-weight: 400;
+}
+.productBtn {
+	width: 100%;
+	background: #5ec396;
+	color: #fff;
+	border: none;
+	outline: none;
+	padding: 12px;
+	margin: 16px 0 7px 0;
+	border-radius: 8px;
 }

@@ -1,0 +1,44 @@
+.title {
+	margin: 2rem 1.3rem;
+	font-weight: 500;
+	font-size: 22px;
+}
+
+.scheduleContainer {
+	padding: 2rem 1.5rem;
+	list-style: none;
+}
+.scheduleContainer > li {
+	margin-bottom: 1.4rem;
+}
+.scheduleContainer > li p.scheduleDay {
+	font-size: 20px;
+	font-weight: 500;
+	font-family: var(--raleway);
+}
+
+.scheduleContainer > li .scheduleItems {
+	padding: 12px 0;
+	list-style: none;
+}
+.scheduleContainer > li .scheduleItems > li {
+	background: #0a0c08;
+	padding: 15px 15px;
+	border-radius: 13px;
+	margin-bottom: 0.5rem;
+}
+.scheduleContainer > li .scheduleItems > li span {
+	border-left: 2px solid #5ec396;
+	display: block;
+	padding: 10px;
+}
+.scheduleContainer > li .scheduleItems > li span .scheduleName {
+	color: #fff;
+	font-weight: 500;
+	font-size: 17px;
+}
+.scheduleContainer > li .scheduleItems > li span .scheduleDate {
+	color: #fff;
+	font-size: 13px;
+	margin-top: 10px;
+}

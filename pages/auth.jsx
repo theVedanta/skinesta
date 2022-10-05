@@ -3,9 +3,13 @@ import styles from "../styles/auth.module.css";
 import AuthCard from "components/AuthCard";
 import useEmblaCarousel from "embla-carousel-react";
 import Google from "components/Google";
+import CarouselNavigator from "components/CarouselNavigator";
 
 const Auth = () => {
-	const [emblaRef, embla] = useEmblaCarousel({ loop: false });
+	const [emblaRef, embla] = useEmblaCarousel({
+		loop: false,
+	});
+
 	return (
 		<main className="main">
 			<div className={styles.container}>
@@ -40,11 +44,7 @@ const Auth = () => {
 							/>
 						</div>
 					</div>
-					<ul className="embla__navigation">
-						<li onClick={() => embla.scrollTo(0)}></li>
-						<li onClick={() => embla.scrollTo(1)}></li>
-						<li onClick={() => embla.scrollTo(2)}></li>
-					</ul>
+					<CarouselNavigator embla={embla} />
 					<Google />
 				</div>
 			</div>

@@ -1,0 +1,47 @@
+.landing {
+    width: 100vw;
+    height: 50vh;
+    padding-top: 1vh;
+    background-color: #0a0c08;
+    color: #faf7fa;
+}
+.nav {
+    padding: 1vh 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn {
+    border-radius: 10000px;
+    background-color: #faf7fa;
+    color: #0a0c08;
+    border: 1px solid #faf7fa;
+    padding: 0.8vh 7vw;
+    font-size: 1.6vh;
+}
+.btnSecondary {
+    background-color: transparent;
+    color: #faf7fa;
+}
+.title {
+    margin-top: 6vh;
+    font-size: 30px;
+    color: #faf7fa;
+    font-weight: 600;
+}
+.p {
+    color: rgba(255, 255, 255, 0.44);
+    margin-top: 3vh;
+    padding-right: 7vw;
+}
+.btns {
+    display: flex;
+    margin-top: 3vh;
+}
+.img {
+    position: relative;
+    width: 100%;
+    background-color: #0a0c08;
+    height: 50vh;
+}

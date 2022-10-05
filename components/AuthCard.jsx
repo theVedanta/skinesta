@@ -2,19 +2,19 @@ import Image from "next/image";
 import styles from "../styles/auth.module.css";
 import { Phone } from "react-feather";
 
-const AuthCard = () => {
+const AuthCard = ({ image, title }) => {
 	return (
 		<>
 			<div className={styles.card}>
 				<div className={styles.cardImgBox}>
 					<Image
-						src={require("../public/user_face.jpg")}
+						src={image}
 						width="100px"
 						height="100px"
 						className={styles.cardImg}
 					/>
 				</div>
-				<h2 className={styles.cardTitle}>Personalised experience</h2>
+				<h2 className={styles.cardTitle}>{title}</h2>
 
 				<ul className={styles.list}>
 					<li>

@@ -19,7 +19,7 @@ const Container = ({ children }) => {
 					/>
 					<BottomNavigationItem
 						icon={<Home className="icon" />}
-						path="/"
+						path="/home"
 					/>
 					<BottomNavigationItem
 						icon={<ShoppingBag className="icon" />}

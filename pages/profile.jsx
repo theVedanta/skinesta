@@ -1,6 +1,5 @@
 import styles from "@/styles/profile.module.css";
 import Container from "components/Container";
-import Image from "next/image";
 import Link from "next/link";
 import {
     ShoppingBag,
@@ -12,24 +11,31 @@ import {
     HelpCircle,
     User,
 } from "react-feather";
-import user_face from "../public/user_face.jpg";
 
-const profile = () => {
+const profile = ({ user }) => {
     return (
         <>
             <Container>
                 <div className={styles.profileBox}>
                     <div className={styles.profileImg}>
-                        <Image
-                            src={user_face}
+                        <img
+                            src={user && user.pfp}
                             width="80"
                             height="80"
-                            style={{ borderRadius: "50%" }}
+                            style={{
+                                borderRadius: "50%",
+                                width: "80px",
+                                height: "80px",
+                            }}
                         />
                     </div>
                     <div className={styles.profileContentBox}>
-                        <h3 className={styles.profileName}>User Name</h3>
-                        <h3 className={styles.profileEmail}>user@mail.com</h3>
+                        <h3 className={styles.profileName}>
+                            {user && user.name}
+                        </h3>
+                        <h3 className={styles.profileEmail}>
+                            {user && user.email}
+                        </h3>
                     </div>
                 </div>
 

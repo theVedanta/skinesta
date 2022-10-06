@@ -7,6 +7,7 @@ import ShopBannerCard from "components/ShopBannerCard";
 import Container from "components/Container";
 import { useEffect, useState } from "react";
 import BASE_API_URL from "../../constants";
+import banner from "../../public/banner1.png";
 
 const Shop = ({ cart, setCart }) => {
     const [emblaRef] = useEmblaCarousel({ loop: false }, [
@@ -32,22 +33,22 @@ const Shop = ({ cart, setCart }) => {
                 <div className="embla" ref={emblaRef}>
                     <div className="embla__container">
                         <div className={`embla__slide`}>
-                            <ShopBannerCard image={"/banner1.png"} />
+                            <ShopBannerCard image={banner} />
                         </div>
                         <div className={`embla__slide`}>
-                            <ShopBannerCard image={"/banner1.png"} />
+                            <ShopBannerCard image={banner} />
                         </div>
                         <div className={`embla__slide`}>
-                            <ShopBannerCard image={"/banner1.png"} />
+                            <ShopBannerCard image={banner} />
                         </div>
                         <div className={`embla__slide`}>
-                            <ShopBannerCard image={"/banner1.png"} />
+                            <ShopBannerCard image={banner} />
                         </div>
                         <div className={`embla__slide`}>
-                            <ShopBannerCard image={"/banner1.png"} />
+                            <ShopBannerCard image={banner} />
                         </div>
                         <div className={`embla__slide`}>
-                            <ShopBannerCard image={"/banner1.png"} />
+                            <ShopBannerCard image={banner} />
                         </div>
                     </div>
                 </div>

@@ -60,7 +60,7 @@ router.post("/search", async (req, res) => {
 
 router.get("/schedule", async (req, res) => {
     const schedule = await Schedule.findOne({ user: req.query.id });
-    res.json({ schedule });
+    res.json({ schedule: schedule ? schedule : false });
 });
 
 async function makeSchedule(id, smooth, type, smoothProduct, skinProduct) {

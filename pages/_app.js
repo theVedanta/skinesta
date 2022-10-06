@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import { GoogleOAuthProvider } from "@react-oauth/google";
 import { useEffect, useState } from "react";
+import BASE_API_URL from "../constants";
 
 function App({ Component, pageProps }) {
     const [authed, setAuthed] = useState("check");

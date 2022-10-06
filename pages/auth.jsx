@@ -10,7 +10,9 @@ const Auth = ({ setAuthed, setUser, authed }) => {
 
     return (
         <>
-            {authed ? (
+            {authed === "check" ? (
+                <>Loading...</>
+            ) : !authed ? (
                 <main className="main">
                     <div className={styles.container}>
                         <Image
@@ -59,7 +61,10 @@ const Auth = ({ setAuthed, setUser, authed }) => {
                     </div>
                 </main>
             ) : (
-                ""
+                <>
+                    Loading...
+                    {(window.location.href = "/home")}
+                </>
             )}
         </>
     );

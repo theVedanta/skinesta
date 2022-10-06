@@ -6,6 +6,9 @@ import BASE_API_URL from "../constants";
 import ScheduleContainer from "../components/ScheduleContainer";
 import Link from "next/link";
 import { ArrowRight } from "react-feather";
+import upload from "../public/upload@2x.png";
+import logo from "../public/logo@2x.png";
+import auth_bg from "../public/auth-bg.png";
 
 const Upload = ({ user, authed, setCart, cart }) => {
     const [scheduled, setScheduled] = useState(false);
@@ -140,7 +143,7 @@ const Upload = ({ user, authed, setCart, cart }) => {
                         />
                         <label htmlFor="img">
                             <Image
-                                src="/upload@2x.png"
+                                src={upload}
                                 width={320}
                                 height={300}
                                 alt="img"
@@ -199,7 +202,7 @@ const Upload2 = ({ scheduleData, prods, setCart, cart }) => {
         <>
             <div className={styles.container}>
                 <Image
-                    src="/auth-bg.png"
+                    src={auth_bg}
                     layout="fill"
                     style={{ zIndex: "-1" }}
                     alt="img"
@@ -208,12 +211,7 @@ const Upload2 = ({ scheduleData, prods, setCart, cart }) => {
                     className={styles.logo}
                     style={{ marginTop: "2rem", marginBottom: "0rem" }}
                 >
-                    <Image
-                        src={"/logo@2x.png"}
-                        width={300}
-                        height={60}
-                        alt="img"
-                    />
+                    <Image src={logo} width={300} height={60} alt="img" />
                 </div>
 
                 <div className={`${styles.scheduleAndShopCard} ${styles.card}`}>

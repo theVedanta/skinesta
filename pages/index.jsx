@@ -1,18 +1,15 @@
 import Image from "next/image";
 import style from "../styles/landing.module.css";
 import Link from "next/link";
+import logo from "../public/logo@2x.png";
+import img from "../public/img@2x.png";
 
 const Home = () => {
     return (
         <main className="main">
             <section className={`cont ${style.landing}`}>
                 <nav className={style.nav}>
-                    <Image
-                        alt="logo"
-                        width="150"
-                        height="30"
-                        src="/logo@2x.png"
-                    />
+                    <Image alt="logo" width="150" height="30" src={logo} />
                     <Link href="/auth">
                         <a className={`${style.btn}`}>Login</a>
                     </Link>
@@ -48,7 +45,7 @@ const Home = () => {
             </section>
             <div className={style.img}>
                 <Image
-                    src="/img@2x.png"
+                    src={img}
                     alt="img"
                     width="500"
                     height="1000"

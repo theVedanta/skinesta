@@ -4,6 +4,9 @@ import AuthCard from "components/AuthCard";
 import useEmblaCarousel from "embla-carousel-react";
 import Google from "components/Google";
 import CarouselNavigator from "components/CarouselNavigator";
+import bg from "../public/auth-bg.png";
+import logo from "../public/logo@2x.png";
+import face from "../public/user_face.jpg";
 
 const Auth = ({ setAuthed, setUser, authed }) => {
     const [emblaRef, embla] = useEmblaCarousel({ loop: false });
@@ -16,7 +19,8 @@ const Auth = ({ setAuthed, setUser, authed }) => {
                 <main className="main">
                     <div className={styles.container}>
                         <Image
-                            src={"/auth-bg.png"}
+                            // src={"/auth-bg.png"}
+                            src={bg}
                             layout="fill"
                             style={{ zIndex: "-1" }}
                             alt="img"
@@ -24,7 +28,8 @@ const Auth = ({ setAuthed, setUser, authed }) => {
                         {/* <h1 className={styles.title}>Skinesta</h1> */}
                         <div className={styles.logo}>
                             <Image
-                                src={"/logo@2x.png"}
+                                // src={"/logo@2x.png"}
+                                src={logo}
                                 width="300"
                                 height="60"
                                 alt="img"
@@ -36,19 +41,19 @@ const Auth = ({ setAuthed, setUser, authed }) => {
                                 <div className={`embla__slide`}>
                                     <AuthCard
                                         title="Personalised experience"
-                                        image={"/user_face.jpg"}
+                                        image={face}
                                     />
                                 </div>
                                 <div className={`embla__slide`}>
                                     <AuthCard
                                         title="Personalised experience"
-                                        image={"/user_face.jpg"}
+                                        image={face}
                                     />
                                 </div>
                                 <div className={`embla__slide`}>
                                     <AuthCard
                                         title="Personalised experience"
-                                        image={"/user_face.jpg"}
+                                        image={face}
                                     />
                                 </div>
                             </div>

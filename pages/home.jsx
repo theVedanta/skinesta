@@ -8,6 +8,8 @@ import ShopBannerCard from "components/ShopBannerCard";
 import Protected from "components/Protected";
 import { useEffect, useState } from "react";
 import BASE_API_URL from "../constants";
+import logo from "../public/logo@2x.png";
+import banner from "../public/banner1.png";
 
 const Home = ({ authed, user }) => {
     const [emblaRef] = useEmblaCarousel({ loop: false }, [
@@ -35,12 +37,7 @@ const Home = ({ authed, user }) => {
         <Protected authed={authed}>
             <Container>
                 <div className={styles.logo}>
-                    <Image
-                        src="/logo@2x.png"
-                        width="200"
-                        height="50"
-                        alt="alt"
-                    />
+                    <Image src={logo} width="200" height="50" alt="alt" />
                 </div>
                 <div className={styles.container}>
                     <h1 className={styles.welcomeText}>
@@ -60,7 +57,7 @@ const Home = ({ authed, user }) => {
                             <div className="embla__container">
                                 <div className={`embla__slide`}>
                                     <ShopBannerCard
-                                        image={"/banner1.png"}
+                                        image={banner}
                                         bannerCardStyle={{
                                             marginLeft: 0,
                                             marginRight: 0,
@@ -69,7 +66,7 @@ const Home = ({ authed, user }) => {
                                 </div>
                                 <div className={`embla__slide`}>
                                     <ShopBannerCard
-                                        image={"/banner1.png"}
+                                        image={banner}
                                         bannerCardStyle={{
                                             marginLeft: 0,
                                             marginRight: 0,
@@ -78,7 +75,7 @@ const Home = ({ authed, user }) => {
                                 </div>
                                 <div className={`embla__slide`}>
                                     <ShopBannerCard
-                                        image={"/banner1.png"}
+                                        image={banner}
                                         bannerCardStyle={{
                                             marginLeft: 0,
                                             marginRight: 0,

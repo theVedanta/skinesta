@@ -94,7 +94,7 @@ async function makeSchedule(id, smooth, type, smoothProduct, skinProduct) {
     if (type === "dry") {
         scheduleLeastCount--;
     } else if (type === "oily") {
-        scheduleLeastCount++;
+        scheduleLeastCount += 2;
     }
 
     let tasks = {};

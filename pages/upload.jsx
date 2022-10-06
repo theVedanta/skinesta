@@ -208,7 +208,12 @@ const Upload2 = ({ scheduleData, prods, setCart, cart }) => {
                     className={styles.logo}
                     style={{ marginTop: "2rem", marginBottom: "0rem" }}
                 >
-                    <Image src={require("../public/logo@2x.png")} alt="img" />
+                    <Image
+                        src={"/logo@2x.png"}
+                        width={300}
+                        height={60}
+                        alt="img"
+                    />
                 </div>
 
                 <div className={`${styles.scheduleAndShopCard} ${styles.card}`}>

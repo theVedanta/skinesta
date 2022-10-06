@@ -47,7 +47,7 @@ const profile = () => {
 					</li>
 					<li>
 						<ShoppingCart className={styles.icon} />
-						<Link href="/shop/orders">
+						<Link href="/shop/cart">
 							<a>Cart</a>
 						</Link>
 					</li>

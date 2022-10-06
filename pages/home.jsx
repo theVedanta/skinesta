@@ -22,7 +22,6 @@ const Home = ({ authed, user }) => {
 			);
 			let schedule = await scheduleJson.json();
 			schedule = schedule.schedule;
-
 			schedule !== undefined
 				? setScheduleData(schedule)
 				: (window.location.href = "/upload");

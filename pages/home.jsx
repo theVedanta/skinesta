@@ -1,5 +1,5 @@
 import Container from "components/Container";
-import styles from "@/styles/home.module.css";
+import styles from "../styles/home.module.css";
 import Image from "next/image";
 import ScheduleContainer from "components/ScheduleContainer";
 import useEmblaCarousel from "embla-carousel-react";
@@ -36,7 +36,7 @@ const Home = ({ authed, user }) => {
             <Container>
                 <div className={styles.logo}>
                     <Image
-                        src={require("@/public/logo@2x.png")}
+                        src="/logo@2x.png"
                         width="200"
                         height="50"
                         alt="alt"
@@ -60,7 +60,7 @@ const Home = ({ authed, user }) => {
                             <div className="embla__container">
                                 <div className={`embla__slide`}>
                                     <ShopBannerCard
-                                        image={require("@/public/banner1.png")}
+                                        image={"/banner1.png"}
                                         bannerCardStyle={{
                                             marginLeft: 0,
                                             marginRight: 0,
@@ -69,7 +69,7 @@ const Home = ({ authed, user }) => {
                                 </div>
                                 <div className={`embla__slide`}>
                                     <ShopBannerCard
-                                        image={require("@/public/banner1.png")}
+                                        image={"/banner1.png"}
                                         bannerCardStyle={{
                                             marginLeft: 0,
                                             marginRight: 0,
@@ -78,7 +78,7 @@ const Home = ({ authed, user }) => {
                                 </div>
                                 <div className={`embla__slide`}>
                                     <ShopBannerCard
-                                        image={require("@/public/banner1.png")}
+                                        image={"/banner1.png"}
                                         bannerCardStyle={{
                                             marginLeft: 0,
                                             marginRight: 0,

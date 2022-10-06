@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const Product = require("../models/Product");
 const Schedule = require("../models/Schedule");
+const User = require("../models/User");
 
 router.post("/create", async (req, res) => {
     const { price, name, desc, img } = req.body;
@@ -61,6 +62,26 @@ router.post("/search", async (req, res) => {
 router.get("/schedule", async (req, res) => {
     const schedule = await Schedule.findOne({ user: req.query.id });
     res.json({ schedule: schedule ? schedule : false });
+});
+
+router.post("/cart", async (req, res) => {
+    try {
+        const { cart } = req.body;
+        const id = req.query.id;
+
+        await User.updateOne({ _id: id }, { $set: { cart } });
+
+        res.json({ done: true });
+    } catch (err) {
+        res.json(err);
+    }
+});
+
+router.post("/cart-items", async (req, res) => {
+    const cart = req.body.cart;
+    const prods = await Product.find({ _id: cart });
+
+    res.json({ prods });
 });
 
 async function makeSchedule(id, smooth, type, smoothProduct, skinProduct) {

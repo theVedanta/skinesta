@@ -34,11 +34,7 @@ const home = () => {
 	return (
 		<Container>
 			<div className={styles.logo}>
-				<Image
-					src={require("@/public/logo@2x.png")}
-					width="200"
-					height="50"
-				/>
+				<Image src="/logo@2x.png" width="200" height="50" />
 			</div>
 			<div className={styles.container}>
 				<h1 className={styles.welcomeText}>
@@ -56,7 +52,7 @@ const home = () => {
 						<div className="embla__container">
 							<div className={`embla__slide`}>
 								<ShopBannerCard
-									image={require("@/public/banner1.png")}
+									image="/banner1.png"
 									bannerCardStyle={{
 										marginLeft: 0,
 										marginRight: 0,
@@ -65,7 +61,7 @@ const home = () => {
 							</div>
 							<div className={`embla__slide`}>
 								<ShopBannerCard
-									image={require("@/public/banner1.png")}
+									image="/banner1.png"
 									bannerCardStyle={{
 										marginLeft: 0,
 										marginRight: 0,
@@ -74,7 +70,7 @@ const home = () => {
 							</div>
 							<div className={`embla__slide`}>
 								<ShopBannerCard
-									image={require("@/public/banner1.png")}
+									image="/banner1.png"
 									bannerCardStyle={{
 										marginLeft: 0,
 										marginRight: 0,

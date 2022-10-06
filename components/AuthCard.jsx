@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../styles/auth.module.css";
+import styles from "@/styles/auth.module.css";
 import { Phone } from "react-feather";
 
 const AuthCard = ({ image, title }) => {

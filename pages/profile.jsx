@@ -20,7 +20,7 @@ const profile = () => {
 				<div className={styles.profileBox}>
 					<div className={styles.profileImg}>
 						<Image
-							src={require("@/public/user_face.jpg")}
+							src="/user_face.jpg"
 							width="80"
 							height="80"
 							style={{ borderRadius: "50%" }}

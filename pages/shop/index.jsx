@@ -18,34 +18,22 @@ const Shop = () => {
 				<div className="embla" ref={emblaRef}>
 					<div className="embla__container">
 						<div className={`embla__slide`}>
-							<ShopBannerCard
-								image={require("@/public/banner1.png")}
-							/>
+							<ShopBannerCard image="/banner1.png" />
 						</div>
 						<div className={`embla__slide`}>
-							<ShopBannerCard
-								image={require("@/public/banner1.png")}
-							/>
+							<ShopBannerCard image="/banner1.png" />
 						</div>
 						<div className={`embla__slide`}>
-							<ShopBannerCard
-								image={require("@/public/banner1.png")}
-							/>
+							<ShopBannerCard image="/banner1.png" />
 						</div>
 						<div className={`embla__slide`}>
-							<ShopBannerCard
-								image={require("@/public/banner1.png")}
-							/>
+							<ShopBannerCard image="/banner1.png" />
 						</div>
 						<div className={`embla__slide`}>
-							<ShopBannerCard
-								image={require("@/public/banner1.png")}
-							/>
+							<ShopBannerCard image="/banner1.png" />
 						</div>
 						<div className={`embla__slide`}>
-							<ShopBannerCard
-								image={require("@/public/banner1.png")}
-							/>
+							<ShopBannerCard image="/banner1.png" />
 						</div>
 					</div>
 				</div>
@@ -54,22 +42,22 @@ const Shop = () => {
 					<h2 className={styles.sectionTitle}>Best Seller</h2>
 					<div className={styles.contentContainer}>
 						<ProductCard
-							image={require("@/public/product1.webp")}
+							image="/product1.webp"
 							name="Deep skin cleaner"
 							brand="Aurora"
 						/>
 						<ProductCard
-							image={require("@/public/product1.webp")}
+							image="/product1.webp"
 							name="Deep skin cleaner"
 							brand="Aurora"
 						/>
 						<ProductCard
-							image={require("@/public/product1.webp")}
+							image="/product1.webp"
 							name="Deep skin cleaner"
 							brand="Aurora"
 						/>
 						<ProductCard
-							image={require("@/public/product1.webp")}
+							image="/product1.webp"
 							name="Deep skin cleaner"
 							brand="Aurora"
 						/>

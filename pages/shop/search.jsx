@@ -30,22 +30,22 @@ const Search = () => {
 
 			<div className={styles.contentContainer}>
 				<ProductCard
-					image={require("@/public/product1.webp")}
+					image="/product1.webp"
 					name="Deep skin cleaner"
 					brand="Aurora"
 				/>
 				<ProductCard
-					image={require("@/public/product1.webp")}
+					image="/product1.webp"
 					name="Deep skin cleaner"
 					brand="Aurora"
 				/>
 				<ProductCard
-					image={require("@/public/product1.webp")}
+					image="/product1.webp"
 					name="Deep skin cleaner"
 					brand="Aurora"
 				/>
 				<ProductCard
-					image={require("@/public/product1.webp")}
+					image="/product1.webp"
 					name="Deep skin cleaner"
 					brand="Aurora"
 				/>

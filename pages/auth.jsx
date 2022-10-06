@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../styles/auth.module.css";
+import styles from "@/styles/auth.module.css";
 import AuthCard from "components/AuthCard";
 import useEmblaCarousel from "embla-carousel-react";
 import Google from "components/Google";
@@ -14,13 +14,13 @@ const Auth = () => {
 		<main className="main">
 			<div className={styles.container}>
 				<Image
-					src={require("../public/auth-bg.png")}
+					src="/auth-bg.png"
 					layout="fill"
 					style={{ zIndex: "-1" }}
 					alt="img"
 				/>
 				<div className={styles.logo}>
-					<Image src={require("../public/logo@2x.png")} alt="img" />
+					<Image src="/logo@2x.png" alt="img" />
 				</div>
 
 				<div className="embla" ref={emblaRef}>
@@ -28,19 +28,19 @@ const Auth = () => {
 						<div className={`embla__slide`}>
 							<AuthCard
 								title="Personalised experience"
-								image={require("../public/user_face.jpg")}
+								image="/user_face.jpg"
 							/>
 						</div>
 						<div className={`embla__slide`}>
 							<AuthCard
 								title="Personalised experience"
-								image={require("../public/user_face.jpg")}
+								image="/user_face.jpg"
 							/>
 						</div>
 						<div className={`embla__slide`}>
 							<AuthCard
 								title="Personalised experience"
-								image={require("../public/user_face.jpg")}
+								image="/user_face.jpg"
 							/>
 						</div>
 					</div>

@@ -1,0 +1,60 @@
+.topContainer {
+	padding: 2.2rem 1.5rem;
+	background-color: #fff;
+	border-radius: 0 0 20px 20px;
+	box-shadow: 0 1px 20px 5px rgba(0, 0, 0, 0.1);
+}
+.title {
+	font-weight: 500;
+	font-size: 23px;
+	text-align: center;
+	margin: 0 1.5rem;
+	margin-bottom: 2rem;
+}
+.img {
+	margin: auto;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 2.4rem 0;
+}
+.topContainer p {
+	font-weight: 500;
+	font-size: 15px;
+}
+.topContainer .price {
+	font-size: 2.1rem;
+	text-align: center;
+	margin: 1rem 0;
+}
+
+.btn {
+	display: block;
+	width: 90%;
+	margin: 3.1rem auto;
+	border: none;
+	outline: none;
+	padding: 15px;
+	border-radius: 10pc;
+	background-color: #0a0c08;
+	display: flex;
+	align-items: center;
+}
+.btn span {
+	flex: 1;
+	display: flex;
+	align-items: center;
+}
+.btn p {
+	color: #fff;
+	text-align: start;
+	padding-left: 10px;
+	font-size: 15px;
+}
+.btn span .btnArrow {
+	margin-left: 10px;
+}
+.btn .btnIcon {
+	margin-right: 10px;
+}

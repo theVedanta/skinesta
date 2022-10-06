@@ -108,7 +108,7 @@ const Upload = ({ user, authed }) => {
 		const schedule = products.schedule;
 		products = products.products;
 
-		if (schedule !== undefined) {
+		if (schedule !== null) {
 			window.location.href = "/home";
 		}
 	};

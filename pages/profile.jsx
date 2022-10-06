@@ -77,10 +77,15 @@ const profile = () => {
 					</li>
 				</ul>
 
-				<button className={styles.logoutBtn}>
-					<LogOut className={styles.logoutBtnIcon} color="#5ec396" />
-					<p>Log Out</p>
-				</button>
+				<Link href="/logout">
+					<a className={styles.logoutBtn}>
+						<LogOut
+							className={styles.logoutBtnIcon}
+							color="#5ec396"
+						/>
+						<p>Log Out</p>
+					</a>
+				</Link>
 			</Container>
 		</>
 	);

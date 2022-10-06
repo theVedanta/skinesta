@@ -13,7 +13,7 @@ const Home = ({ authed, user }) => {
 	const [emblaRef] = useEmblaCarousel({ loop: false }, [
 		Autoplay({ playOnInit: true, delay: 3000 }),
 	]);
-	const [scheduleData, setScheduleData] = useState({});
+	const [scheduleData, setScheduleData] = useState({ check: true });
 
 	useEffect(() => {
 		const getSched = async () => {
@@ -22,12 +22,13 @@ const Home = ({ authed, user }) => {
 			);
 			let schedule = await scheduleJson.json();
 			schedule = schedule.schedule;
-			schedule !== undefined
-				? setScheduleData(schedule)
-				: (window.location.href = "/upload");
+
+			schedule === false
+				? (window.location.href = "/upload")
+				: setScheduleData(schedule);
 		};
 
-		getSched();
+		user && user._id && getSched();
 	}, [user._id, user]);
 
 	return (
@@ -46,7 +47,7 @@ const Home = ({ authed, user }) => {
 						Welcome <br />
 						Vedanta
 					</h1>
-					{scheduleData && (
+					{scheduleData && scheduleData.tasks && (
 						<ScheduleContainer
 							scheduleData={scheduleData}
 							containerStyle={{ padding: "0rem 0" }}

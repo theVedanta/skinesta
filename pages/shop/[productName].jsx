@@ -25,7 +25,7 @@ const ProductName = () => {
 								<div className={`embla__slide`} key={index}>
 									<div className={styles.imageBox}>
 										<Image
-											src={require("@/public/product1.webp")}
+											src="/product1.webp"
 											layout="fill"
 										/>
 									</div>

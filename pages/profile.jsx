@@ -14,6 +14,7 @@ import {
 } from "react-feather";
 
 const profile = () => {
+<<<<<<< HEAD
     return (
         <>
             <Container>
@@ -32,6 +33,25 @@ const profile = () => {
                         <h3 className={styles.profileEmail}>user@mail.com</h3>
                     </div>
                 </div>
+=======
+	return (
+		<>
+			<Container>
+				<div className={styles.profileBox}>
+					<div className={styles.profileImg}>
+						<Image
+							src="/user_face.jpg"
+							width="80"
+							height="80"
+							style={{ borderRadius: "50%" }}
+						/>
+					</div>
+					<div className={styles.profileContentBox}>
+						<h3 className={styles.profileName}>User Name</h3>
+						<h3 className={styles.profileEmail}>user@mail.com</h3>
+					</div>
+				</div>
+>>>>>>> bf68afcc2b3453629e33191630c7060890c7d7f8
 
                 <ul className={styles.list}>
                     <li>

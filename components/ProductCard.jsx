@@ -1,7 +1,7 @@
 import styles from "@/styles/shop.module.css";
 import Link from "next/link";
 
-const ProductCard = ({ image, name, brand }) => {
+const ProductCard = ({ image, name, brand, id, cart, setCart }) => {
     return (
         <div className={styles.productCard}>
             <div className={styles.productImgBox}>
@@ -11,7 +11,14 @@ const ProductCard = ({ image, name, brand }) => {
                 <a className={styles.productName}>{name}</a>
             </Link>
             <h3 className={styles.brand}>{brand}</h3>
-            <button className={styles.productBtn}>Add to Cart</button>
+            {cart && !cart.includes(id) && (
+                <button
+                    className={styles.productBtn}
+                    onClick={() => setCart([...cart, id])}
+                >
+                    Add to Cart
+                </button>
+            )}
         </div>
     );
 };

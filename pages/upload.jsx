@@ -7,7 +7,7 @@ import ScheduleContainer from "../components/ScheduleContainer";
 import Link from "next/link";
 import { ArrowRight } from "react-feather";
 
-const Upload = ({ user, authed }) => {
+const Upload = ({ user, authed, setCart, cart }) => {
     const [scheduled, setScheduled] = useState(false);
     const [schedule, setSchedule] = useState(false);
     const [products, setProducts] = useState(false);
@@ -152,13 +152,18 @@ const Upload = ({ user, authed }) => {
                     </form>
                 </main>
             ) : (
-                <Upload2 scheduleData={schedule} prods={products} />
+                <Upload2
+                    scheduleData={schedule}
+                    prods={products}
+                    cart={cart}
+                    setCart={setCart}
+                />
             )}
         </Protected>
     );
 };
 
-const ProductItem = ({ name, price, image }) => {
+const ProductItem = ({ name, price, image, id, cart, setCart }) => {
     return (
         <div className={styles.productItem}>
             <div className={styles.productImgBox}>
@@ -167,13 +172,22 @@ const ProductItem = ({ name, price, image }) => {
             <div className={styles.productContent}>
                 <h3 className={styles.productName}>{name}</h3>
                 <h3 className={styles.productPrice}>{price}</h3>
-                <button className={styles.btn}>Buy Now</button>
+                {cart && !cart.includes(id) && (
+                    <button
+                        onClick={() => {
+                            setCart([...cart, id]);
+                        }}
+                        className={styles.btn}
+                    >
+                        Buy Now
+                    </button>
+                )}
             </div>
         </div>
     );
 };
 
-const Upload2 = ({ scheduleData, prods }) => {
+const Upload2 = ({ scheduleData, prods, setCart, cart }) => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
@@ -236,9 +250,12 @@ const Upload2 = ({ scheduleData, prods }) => {
                             products.map((prod, i) => (
                                 <ProductItem
                                     key={i}
+                                    id={prod._id}
                                     image={prod.img}
                                     name={prod.name}
                                     price={`$${prod.price}`}
+                                    cart={cart}
+                                    setCart={setCart}
                                 />
                             ))}
                     </div>

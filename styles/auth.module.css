@@ -87,11 +87,12 @@
     padding-bottom: 8px;
 }
 .productImgBox img {
-    width: 60%;
+    width: auto;
     max-height: 80px;
 }
 .productItem .productContent {
     padding: 5px 0.8rem;
+    padding-bottom: 10px;
 }
 .productItem .productName {
     font-weight: 500;
@@ -103,6 +104,7 @@
 .productItem .productPrice {
     font-weight: 500;
     font-size: 18px;
+    padding: 10px 0;
     color: #fff;
 }
 .productItem .btn {

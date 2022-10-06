@@ -8,7 +8,7 @@ import Container from "components/Container";
 import { useEffect, useState } from "react";
 import BASE_API_URL from "../../constants";
 
-const Shop = () => {
+const Shop = ({ cart, setCart }) => {
     const [emblaRef] = useEmblaCarousel({ loop: false }, [
         Autoplay({ playOnInit: true, delay: 3000 }),
     ]);
@@ -61,6 +61,9 @@ const Shop = () => {
                                 image={prod.img}
                                 name={prod.name}
                                 brand={`$${prod.price}`}
+                                id={prod._id}
+                                cart={cart}
+                                setCart={setCart}
                             />
                         ))}
                     </div>

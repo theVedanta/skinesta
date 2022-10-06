@@ -41,9 +41,11 @@ const Upload = ({ user, authed, setCart, cart }) => {
         );
 
         const data = await dataJson.json();
+        console.log(data);
 
         if (data.message) return (window.location.href = "/error");
 
+        // SAMPLE 1
         // const data = {
         //     error_code: 0,
         //     error_msg: "SUCCESS",
@@ -76,6 +78,39 @@ const Upload = ({ user, authed, setCart, cart }) => {
         //     },
         // };
 
+        // SAMPLE 2
+        // const data = {
+        //     error_code: 0,
+        //     error_msg: "SUCCESS",
+        //     log_id: 346203967,
+        //     timestamp: 1665068746,
+        //     cached: 0,
+        //     result: {
+        //         face_num: 1,
+        //         face_list: [
+        //             {
+        //                 face_token: "1ab1970602431b2d90b27e1bbdde951b",
+        //                 location: {
+        //                     left: 25.34,
+        //                     top: 231.54,
+        //                     width: 538,
+        //                     height: 518,
+        //                     degree: 0,
+        //                     prob: 1,
+        //                     conf: 1,
+        //                 },
+        //                 skin: {
+        //                     smooth: 2,
+        //                 },
+        //                 skinquality: {
+        //                     skin_dryoil_check: ["2", "2", "1", "1", "0"],
+        //                     skin_sensitive_check: ["0"],
+        //                 },
+        //             },
+        //         ],
+        //     },
+        // };
+
         const face = data.result.face_list[0];
 
         const { smooth } = face.skin;
@@ -96,9 +131,9 @@ const Upload = ({ user, authed, setCart, cart }) => {
 
         // Determine type
         let max = Math.max(zerocount, onecount, twocount);
-        if (max === zerocount) type = "dry";
+        if (max === twocount) type = "oily";
         else if (max === onecount) type = "neutral";
-        else if (max === twocount) type = "oily";
+        else if (max === zerocount) type = "dry";
 
         // Determine smoothness
         if (smooth >= 3) smoothness = "hard";

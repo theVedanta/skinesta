@@ -1,30 +1,30 @@
 .topContainer {
-	background-color: #f6f6f6;
-	padding-bottom: 1rem;
-	border-radius: 0 0 20px 20px;
-	box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    background-color: #f6f6f6;
+    padding-bottom: 1rem;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
 }
 
 .header {
-	display: flex;
-	align-items: center;
-	padding: 1rem 0.7rem;
-	margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    padding: 1rem 0.7rem;
+    margin-bottom: 10px;
 }
 .header h2 {
-	flex: 1;
-	text-align: center;
-	font-weight: 500;
-	font-size: 20px;
+    flex: 1;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 .imageBox {
-	position: relative;
-	height: 350px;
+    position: relative;
+    height: 350px;
 }
 
 .productName {
-	font-weight: 500;
-	font-size: 21px;
-	margin: 1.3rem 10px;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 1.3rem 10px;
 }

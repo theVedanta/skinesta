@@ -23,7 +23,8 @@ const Google = ({ setAuthed, setUser }) => {
             setUser(authed.user);
             setAuthed(true);
             localStorage.setItem("authToken", authed.user.authToken);
-            window.location.href = "/";
+
+            window.location.href = "/upload";
         } else {
             setAuthed(false);
             localStorage.removeItem("authToken");

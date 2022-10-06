@@ -5,11 +5,25 @@ import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import ShopBannerCard from "components/ShopBannerCard";
 import Container from "components/Container";
+import { useEffect, useState } from "react";
+import BASE_API_URL from "../../constants";
 
 const Shop = () => {
 	const [emblaRef] = useEmblaCarousel({ loop: false }, [
 		Autoplay({ playOnInit: true, delay: 3000 }),
 	]);
+	const [products, setProducts] = useState([]);
+
+	useEffect(() => {
+		const getProducts = async () => {
+			const productsJson = await fetch(`${BASE_API_URL}/shop`);
+			const prods = await productsJson.json();
+
+			setProducts(prods);
+		};
+
+		getProducts();
+	}, []);
 
 	return (
 		<>
@@ -18,22 +32,34 @@ const Shop = () => {
 				<div className="embla" ref={emblaRef}>
 					<div className="embla__container">
 						<div className={`embla__slide`}>
-							<ShopBannerCard image="/banner1.png" />
+							<ShopBannerCard
+								image={require("@/public/banner1.png")}
+							/>
 						</div>
 						<div className={`embla__slide`}>
-							<ShopBannerCard image="/banner1.png" />
+							<ShopBannerCard
+								image={require("@/public/banner1.png")}
+							/>
 						</div>
 						<div className={`embla__slide`}>
-							<ShopBannerCard image="/banner1.png" />
+							<ShopBannerCard
+								image={require("@/public/banner1.png")}
+							/>
 						</div>
 						<div className={`embla__slide`}>
-							<ShopBannerCard image="/banner1.png" />
+							<ShopBannerCard
+								image={require("@/public/banner1.png")}
+							/>
 						</div>
 						<div className={`embla__slide`}>
-							<ShopBannerCard image="/banner1.png" />
+							<ShopBannerCard
+								image={require("@/public/banner1.png")}
+							/>
 						</div>
 						<div className={`embla__slide`}>
-							<ShopBannerCard image="/banner1.png" />
+							<ShopBannerCard
+								image={require("@/public/banner1.png")}
+							/>
 						</div>
 					</div>
 				</div>
@@ -41,26 +67,14 @@ const Shop = () => {
 				<div className={styles.section}>
 					<h2 className={styles.sectionTitle}>Best Seller</h2>
 					<div className={styles.contentContainer}>
-						<ProductCard
-							image="/product1.webp"
-							name="Deep skin cleaner"
-							brand="Aurora"
-						/>
-						<ProductCard
-							image="/product1.webp"
-							name="Deep skin cleaner"
-							brand="Aurora"
-						/>
-						<ProductCard
-							image="/product1.webp"
-							name="Deep skin cleaner"
-							brand="Aurora"
-						/>
-						<ProductCard
-							image="/product1.webp"
-							name="Deep skin cleaner"
-							brand="Aurora"
-						/>
+						{products.map((prod, i) => (
+							<ProductCard
+								key={i}
+								image={prod.img}
+								name={prod.name}
+								brand={`$${prod.price}`}
+							/>
+						))}
 					</div>
 				</div>
 			</Container>

@@ -166,3 +166,20 @@ a {
 .react-calendar__tile--now abbr {
 	color: #fff !important;
 }
+.form {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: url(../public/auth-bg@2x.png);
+}
+.form-btn {
+	width: 100%;
+	background-color: #0a0c08;
+	border: none;
+	color: #e5e5e4;
+	padding: 1.6vh 0;
+	border-radius: 100px;
+}

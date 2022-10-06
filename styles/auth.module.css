@@ -1,128 +1,140 @@
 .container {
-	width: 100vw;
-	height: 100%;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
 .logo {
-	margin: 4.5rem 0 3.5rem 0;
-	text-align: center;
-	filter: invert(1);
+    margin: 4.5rem 0 3.5rem 0;
+    text-align: center;
+    filter: invert(1);
 }
 
 .card {
-	display: flex;
-	flex-direction: column;
-	width: 80%;
-	background-color: rgba(255, 255, 255, 0.4);
-	backdrop-filter: blur(20px);
-	box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
-	margin: 3rem auto;
-	border-radius: 12px;
-	min-height: 300px;
-	padding-top: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(20px);
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+    margin: 3rem auto;
+    border-radius: 12px;
+    min-height: 300px;
+    padding-top: 1.3rem;
 }
 .cardImgBox {
-	display: flex;
-	justify-content: center;
-	padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
 }
 .cardImg {
-	border-radius: 50%;
+    border-radius: 50%;
 }
 .cardTitle {
-	font-weight: 500;
-	font-size: 19px;
-	text-align: center;
-	margin: 10px 0;
+    font-weight: 500;
+    font-size: 19px;
+    text-align: center;
+    margin: 10px 0;
 }
 
 .list {
-	flex: 1;
-	height: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	list-style: none;
-	padding: 0 1rem;
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0 1rem;
 }
 .list li {
-	text-align: center;
+    text-align: center;
 }
 .list li .icon {
-	width: 28px;
-	height: 28px;
-	margin-bottom: 7px;
+    width: 28px;
+    height: 28px;
+    margin-bottom: 7px;
 }
 .list li p {
-	font-size: 11px;
+    font-size: 11px;
 }
 
 .scheduleAndShopCard {
-	width: 85%;
-	max-height: 650px;
-	overflow: auto;
+    width: 85%;
+    max-height: 650px;
+    overflow: auto;
 }
 
 .scheduleAndShopCard .title {
-	font-weight: 600;
-	font-size: 18px;
-	text-align: center;
-	padding: 0 2rem;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    padding: 0 2rem;
 }
 
 .contentContainer {
-	padding: 1.5rem 15px;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-gap: 10px;
+    padding: 1.5rem 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
 }
 
 .productItem {
-	background-color: #0a0c08;
-	border-radius: 13px;
+    background-color: #0a0c08;
+    border-radius: 13px;
 }
 .productImgBox {
-	text-align: center;
-	padding-top: 12px;
-	padding-bottom: 8px;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 8px;
 }
 .productImgBox img {
-	width: 60%;
-	max-height: 80px;
+    width: 60%;
+    max-height: 80px;
 }
 .productItem .productContent {
-	padding: 5px 0.8rem;
+    padding: 5px 0.8rem;
 }
 .productItem .productName {
-	font-weight: 500;
-	font-size: 14px;
-	text-transform: capitalize;
-	color: #fff;
-	margin-bottom: 7px;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #fff;
+    margin-bottom: 7px;
 }
 .productItem .productPrice {
-	font-weight: 500;
-	font-size: 18px;
-	color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
 }
 .productItem .btn {
-	border: none;
-	outline: none;
-	background-color: #fff;
-	color: #000;
-	border-radius: 10pc;
-	padding: 8px 15px;
-	margin: 10px 0;
-	font-weight: 500;
-	font-size: 13px;
-	text-align: center;
-	text-transform: capitalize;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10pc;
+    padding: 8px 15px;
+    margin: 10px 0;
+    font-weight: 500;
+    font-size: 13px;
+    text-align: center;
+    text-transform: capitalize;
 }
 .scheduleContainerItem {
-	margin-bottom: 0 !important;
+    margin-bottom: 0 !important;
 }
 
 .secTitle {
-	font-weight: 500;
-	font-size: 19px;
-	padding: 0 1.2rem;
+    font-weight: 500;
+    font-size: 19px;
+    padding: 0 1.2rem;
+}
+.btnMax {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vh 6vw;
+    background-color: transparent;
+    color: #0a0c08;
+    border: 2px solid #0a0c08;
+    border-radius: 20px;
 }

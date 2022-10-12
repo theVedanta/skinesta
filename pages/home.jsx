@@ -37,7 +37,7 @@ const Home = ({ authed, user }) => {
         <Protected authed={authed}>
             <Container>
                 <div className={styles.logo}>
-                    <Image src={logo} width="200" height="50" alt="alt" />
+                    <Image src={logo} width="250" height="50" alt="alt" />
                 </div>
                 <div className={styles.container}>
                     <h1 className={styles.welcomeText}>

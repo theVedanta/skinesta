@@ -17,66 +17,66 @@ const Upload = ({ user, authed, setCart, cart }) => {
 
     const getStats = async (e) => {
         e.preventDefault();
-        // const file = e.target.querySelector("input").files[0];
-        // const params = new FormData();
-        // params.append("max_face_num", "1");
-        // params.append("face_field", [
-        //     "smooth", // 1-4 smaller the smoother
-        //     // "acnespotmole",
-        //     // "wrinkle",
-        //     "skinquality", // Array of dry and oily skin fields, example: [“0”,“1”,“0”,“0”,“0”],//“0”:“dry”,“1”:“neutral”, “2”: “oily”, which represents the forehead, nose, left cheek, right cheek, and chin in order.
-        // ]);
-        // params.append("image", file, "wil.png");
+        const file = e.target.querySelector("input").files[0];
+        const params = new FormData();
+        params.append("max_face_num", "1");
+        params.append("face_field", [
+            "smooth", // 1-4 smaller the smoother
+            // "acnespotmole",
+            // "wrinkle",
+            "skinquality", // Array of dry and oily skin fields, example: [“0”,“1”,“0”,“0”,“0”],//“0”:“dry”,“1”:“neutral”, “2”: “oily”, which represents the forehead, nose, left cheek, right cheek, and chin in order.
+        ]);
+        params.append("image", file, "wil.png");
 
-        // const dataJson = await fetch(
-        //     "https://skin-analysis.p.rapidapi.com/face/effect/skin_analyze",
-        //     {
-        //         method: "POST",
-        //         headers: {
-        //             "X-RapidAPI-Key": process.env.NEXT_PUBLIC_API_KEY,
-        //             "X-RapidAPI-Host": "skin-analysis.p.rapidapi.com",
-        //         },
-        //         body: params,
-        //     }
-        // );
+        const dataJson = await fetch(
+            "https://skin-analysis.p.rapidapi.com/face/effect/skin_analyze",
+            {
+                method: "POST",
+                headers: {
+                    "X-RapidAPI-Key": process.env.NEXT_PUBLIC_API_KEY,
+                    "X-RapidAPI-Host": "skin-analysis.p.rapidapi.com",
+                },
+                body: params,
+            }
+        );
 
-        // const data = await dataJson.json();
-        // console.log(data);
+        const data = await dataJson.json();
+        console.log(data);
 
-        // if (data.message) return (window.location.href = "/error");
+        if (data.message) return (window.location.href = "/error");
 
         // SAMPLE 1
-        const data = {
-            error_code: 0,
-            error_msg: "SUCCESS",
-            log_id: 2523904286,
-            timestamp: 1664980923,
-            cached: 0,
-            result: {
-                face_num: 1,
-                face_list: [
-                    {
-                        face_token: "c0a74282032310f3fc1a16c920b71645",
-                        location: {
-                            left: 58.89,
-                            top: 410.25,
-                            width: 537,
-                            height: 518,
-                            degree: 0,
-                            prob: 1,
-                            conf: 1,
-                        },
-                        skin: {
-                            smooth: 3,
-                        },
-                        skinquality: {
-                            skin_dryoil_check: ["1", "1", "1", "1", "0"],
-                            skin_sensitive_check: ["0"],
-                        },
-                    },
-                ],
-            },
-        };
+        // const data = {
+        //     error_code: 0,
+        //     error_msg: "SUCCESS",
+        //     log_id: 2523904286,
+        //     timestamp: 1664980923,
+        //     cached: 0,
+        //     result: {
+        //         face_num: 1,
+        //         face_list: [
+        //             {
+        //                 face_token: "c0a74282032310f3fc1a16c920b71645",
+        //                 location: {
+        //                     left: 58.89,
+        //                     top: 410.25,
+        //                     width: 537,
+        //                     height: 518,
+        //                     degree: 0,
+        //                     prob: 1,
+        //                     conf: 1,
+        //                 },
+        //                 skin: {
+        //                     smooth: 3,
+        //                 },
+        //                 skinquality: {
+        //                     skin_dryoil_check: ["1", "1", "1", "1", "0"],
+        //                     skin_sensitive_check: ["0"],
+        //                 },
+        //             },
+        //         ],
+        //     },
+        // };
 
         // SAMPLE 2
         // const data = {
